@@ -1,0 +1,25 @@
+
+name: monoidal-map
+
+default-extensions:
+- LambdaCase
+- BlockArguments
+- OverloadedRecordDot
+- DefaultSignatures
+- DerivingStrategies
+- DeriveFunctor
+- DeriveFoldable
+- DeriveTraversable
+- NoFieldSelectors
+- UndecidableInstances
+- ViewPatterns
+
+language: GHC2021
+
+dependencies:
+- base
+- containers
+
+library:
+  source-dirs:
+  - src
