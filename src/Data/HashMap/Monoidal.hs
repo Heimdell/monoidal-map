@@ -28,7 +28,7 @@ singleton = (coerce .) . Map.singleton
 (!) :: (Hashable k, Monoid v) => Map k v -> k -> v
 (!) = (fromMaybe mempty .) . flip Map.lookup . coerce
 
-map :: (Hashable k) => (v -> w) -> Map k v -> Map k w
+map :: (v -> w) -> Map k v -> Map k w
 map = (coerce .) . (. coerce) . Map.map
 
 filter :: (v -> Bool) -> Map k v -> Map k v
