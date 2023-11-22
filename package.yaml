@@ -19,6 +19,10 @@ language: GHC2021
 dependencies:
 - base
 - containers
+- hashable
+- unordered-containers
+
+ghc-options: -freverse-errors
 
 library:
   source-dirs:
